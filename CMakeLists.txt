@@ -61,7 +61,7 @@ include(${FREERTOS_PATH}/portable/ThirdParty/GCC/RP2040/FreeRTOS_Kernel_import.c
 include(unity.cmake)
 
 # This defines your project name, you can name it anything you want.
-project(myproject C CXX ASM)
+project(lab03 C CXX ASM)
 
 # These are some macros from the pico SDK that do some setup.
 pico_sdk_init()
@@ -76,7 +76,7 @@ add_compile_definitions(
 include_directories(${CMAKE_CURRENT_LIST_DIR}/include)
 
 # The main executable is defined inside the src directory.
-add_subdirectory(src)
+# add_subdirectory(src)
 
 # The test configuration is inside the test directory.
 include(CTest)
